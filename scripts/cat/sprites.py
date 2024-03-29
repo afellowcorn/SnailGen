@@ -51,7 +51,7 @@ class Sprites():
                    pos,
                    name,
                    sprites_x=3,
-                   sprites_y=7):  # pos = ex. (2, 3), no single pixels
+                   sprites_y=8):  # pos = ex. (2, 3), no single pixels
         """
         Divide sprites on a sprite-sheet into groups of sprites that are easily accessible.
 
@@ -99,7 +99,7 @@ class Sprites():
         # if anyone changes lineart for whatever reason update this
         if isinstance(self.size, int):
             pass
-        elif width / 3 == height / 7:
+        elif width / 3 == height / 8:
             self.size = width / 3
         else:
             self.size = 50 # default, what base clangen uses
